@@ -99,3 +99,35 @@ $(document).ready(function(){
     });
 });
     
+// fixed header
+
+jQuery(window).scroll(function() {
+    if (jQuery(window).scrollTop() >= 10) {
+        jQuery('#home').addClass('fixed-header');
+    }
+    else {
+        jQuery('#home').removeClass('fixed-header');
+    }
+});
+
+/*scroll to top*/
+
+//Get the button:
+
+/*Scroll to top when arrow up clicked BEGIN*/
+$(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if (height > 100) {
+        $('#back2Top').fadeIn();
+    } else {
+        $('#back2Top').fadeOut();
+    }
+});
+$(document).ready(function() {
+    $("#back2Top").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+
+});
