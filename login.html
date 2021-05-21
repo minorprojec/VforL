@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Business</title>
+    <link rel="stylesheet" href="C:\Users\Priya\Desktop\VforL\CSS\style2.css">
+</head>
+
+<body>
+    <header id="home">
+        <div class="container">
+            <div class="top-bar">
+                <div class="nav-col">
+                    <div class="logo">
+                        <img src="images/logo3.png" class="img-responsive" alt="logo">
+                    </div>
+                    <!--logo-->
+                    <div class="menu">
+                        <a class="active" href="index.html"><b>Home</b></a>
+                        <a href="#why-choose-us"><b>About Us</b></a>
+                        <a href="business.html"><b>Businessess</b></a>
+                        <a href="#add-your-shop"><b>Add Business</b></a>
+                        <a href="#contact-us"><b>Contact Us</b></a>
+                    </div>
+                    <div class="clear"></div><!--clear-->
+                    <!--nav-col-->
+                
+                    <div class="clear"></div><!--clear-->   
+                </div>
+            </div>
+        </div>
+    </header>
+        <div class="card">
+            <div class="inner-box" id="card">
+                <div class="card-front">
+                    <h2>Add Your Business</h2>
+                    <form >
+                    <input type="text" class="input-box" placeholder="Shop owner's Name" required><br>
+                    <input type="text" class="input-box" placeholder="Shop's Name" required><br>
+                    <input type="tel" class="input-box" placeholder="Contact no." required><br>
+                    <input type="email" class="input-box" placeholder="Your Email Id" required><br>
+                    <input type="text" class="input-box" placeholder="Address" required><br>
+                    </form>
+                    <button type="button" class="btn" onclick="openRegister()">Next</button>
+                    
+                </div>
+                 <div class="card-back">
+                    <h2>Further Detail's for Your Shop</h2>
+                    <form >
+                    <label for="detail">Homedelivery :</label>
+                    <select name="detail" id="detail">
+                    <option value="Available">Available</option>
+                    <option value="Not Available">Not Available</option>
+                    </select>
+                    <label for="description">Description :</label>
+                    <textarea name="comment" id="" cols="30" rows="10"></textarea>
+                    <button type="submit" class="submit-btn">Submit</button><br>
+                    </form>
+                    <button type="button" class="btn" onclick="openLogin()">Go Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var card = document.getElementById("card");
+        function openRegister(){
+            card.style.transform = "rotateY(-180deg)";
+
+        }
+        function openLogin()
+        {
+            card.style.transform = "rotateY(0deg)";
+        }
+    </script>
+    <footer>
+    <hr class="footer-hr">
+            <p class="copyright-footer">&copy; 2021-VocalforLocal. All Rights Reserved.</p>
+        </div>
+</footer>
+</body>
+
+</html>
