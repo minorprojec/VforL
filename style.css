@@ -61,9 +61,30 @@ p {
 	font-family: 'Rubik';
 	font-weight: 400;
 }
+#arrow i {
+	position: fixed;
+	bottom: 20px;
+	right: 25px;
+	cursor: pointer;
+	background-color: #f47a14;
+	color: #fff;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 50px;
+}
 
 /*header*/
-
+.fixed-header {
+	position: fixed;
+	width: 100%;
+	z-index: 99;
+	left: 0;
+	top: 0;
+	background-color: #fff;
+	box-shadow: 10px 10px 20px #fff;
+}
 header {
 	z-index: 1;
 	position: relative;
@@ -347,9 +368,7 @@ section#why-choose-us {
 }
 
 .form-par {
-    background-image: linear-gradient(
-45deg
-, #6759e8, transparent);
+    background-image: linear-gradient(45deg, #6759e8, transparent);
     padding: 30px 40px;
     width: 80%;
     margin: 0 auto;
@@ -373,9 +392,7 @@ section#why-choose-us {
 input.submit-btn {
     color: #fff;
     border: none;
-    background-image: linear-gradient(
-180deg
-,#17161b 0%, #4d4d4d 100%);
+    background-image: linear-gradient(180deg,#17161b 0%, #4d4d4d 100%);
     padding: 14px 40px;
     margin: 20px auto 0px;
     display: block;
@@ -383,9 +400,75 @@ input.submit-btn {
 	transition: all 0.5s ease;
 }
 input.submit-btn:hover {
-    
-    background-image: linear-gradient(
-180deg
-,#4d4d4d 0%, #17161b 100%);
-    
+    background-image: linear-gradient(180deg,#4d4d4d 0%, #17161b 100%);
+}
+.footer-col {
+	float: left;
+	width: 30%;
+	margin-right: 3%;
+	margin-top: 45px;
+}
+.footer-2-col {
+	position: relative;
+	left: 110px;
+}
+.footer-col h3{
+	color: #3b3663;
+	font-family: "Nunito";
+	font-weight: 800;
+	margin-bottom: 20px;
+}
+.footer-col p{
+	color: #696687;
+	font-size: 16px;
+	font-family: "Rubik";
+	font-weight: 400;
+	line-height: 28px;
+}
+.footer-col i {
+	color: #fff;
+	background-color: orange;
+	border-radius: 50px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	margin-top: 25px;
+	cursor: pointer;
+	transition: all 0.5s ease;
+}
+.social-menu-footer i:hover {
+	transform: translateY(-10px);
+}
+.footer-col.footer-2-col ul li{
+	color: #696687;
+	font-family: "Rubik";
+	font-size: 16px;
+	padding-bottom: 10px;
+	font-weight: 400;
+	cursor: pointer;
+	transition: all 0.5s ease;
+
+}
+.footer-col.footer-2-col ul li:hover{
+	padding-left: 5px;
+}
+.footer-col.footer-2-col ul {
+	list-style: none;
+}
+.footer-col a{
+	color: #696687;
+	text-decoration: none;
+	padding-left: 10px;
+}
+.footer-col span{
+	padding-left: 10px;
+}
+p.copyright-footer {
+	text-align: center;
+	font-family: "Rubik";
+	padding: 20px 20px;
+}
+hr.footer-hr {
+	margin: 60px 0px 20px;
 }
