@@ -1,0 +1,184 @@
+{% include 'header.html' %}
+{% load static %}
+{% block content %}
+
+<link type="text/css" rel="stylesheet" href="{% static 'style.css' %}" />
+{% endblock %} 
+{% block con %} 
+	<div id="arrow">
+		<i class="fa fa-arrow-up" aria-hidden="true"></i>
+	</div>
+	
+	<section class="header-bg-parent">
+		<img src="{% static 'background.jpg' %}" class="img-responsive" alt="service">
+        <div class="header-col1">
+            <h5>WELCOME</h5>
+            <h2>VOCAL FOR LOCAL</h2>
+            <h2 class="typewrite" data-period="1000" data-type='["FOR LOCAL BUSINESS"]'></h2>
+            <p>expand your shop business<br>
+                <b>EXPERIENCE MORE WORRY LESS</b><br>
+               find shops near your locality and make your shopping easy.
+			</p>
+            <button class="common-btn" type="button">CONTACT TODAY</button>
+        </div>
+        <!--header-col1-->
+        
+        <!--header-col2-->
+		<div class="clear"></div>
+		<!--clear-->
+        <img class="header-bg-par-img" src="{%static 'corner-img.png'%}" class="img-responsive" alt="corner"/>
+	</section>
+	<!--header-bg-parent-->
+
+	<section id="feature-sec">
+		<div class="text-center">
+			<h5 class="common-h1">AtmaNirbhar Bharat</h1>
+			<h2 class="common-h2">Opportunities to promote local skills and products</h2>
+		</div><!--text-center-->
+		<section class="feature-col-par">
+			<div class="container">
+				<div class="feature-col">
+					
+					<img src="{% static 'LFV5.jpeg'%}" class="img-responsive" alt="service"/>
+					
+					<!--            </div>feature-col-->
+				</div><!--feature-col-->
+				<div class="feature-col">
+					
+					<img src="{% static 'LFV6.jpeg'%}" class="img-responsive" alt="service"/>
+					
+					<!--            </div>feature-col-->
+				</div><!--feature-col-->
+				<div class="feature-col">
+					
+					<img src="{% static 'LFV7.jpeg'%}" class="img-responsive" alt="service"/>
+					
+					<!--            </div>feature-col-->
+				</div><!--feature-col-->
+				<div class="feature-col">
+					
+					<img src="{% static 'LFV8.jpeg'%}" class="img-responsive" alt="service"/>
+					
+					<!--            </div>feature-col-->
+				</div><!--feature-col-->
+				<div class="clear"></div>
+			</div>
+		</div>	
+	</section>
+
+	<section id="why-choose-us">
+		<div class="container">
+			<div class="why-choose-col">
+				<h5 class="common-h5">WHY CHOOSE US</h5>
+		        <h2 class="common-h2">We support local brands and businesses!</h2>
+				<p>Hon’ble Prime Minister Narendra Modi has made an appeal in the context of supporting Indian economy at the grassroots level as a step towards self-reliance. Through “Vocal for Local”, he has appealed for buying local product and supporting local business. This is because during the lockdown and COVID-19 it is the local vendors, products and services that has helped us survive. He said that the Coronavirus as taught us the importance of local manufacturing, market and supply chain.
+					Let’s raise a voice to buy, promote and preserve local skills and products in India and work towards “vocal for local” as an opportunity to boost local skills and products in India. 
+				</p>
+				
+			</div>
+			<div class="count-col">
+				<div class="stat">
+					<div class="count-sub-col">
+						<div class="milestone-counter">
+							<span class="stat-count highlight">50</span>
+							<div class="milestone-details">Local Shop</div>
+						</div>
+						<!--milestone-counter-->
+					</div>
+					<!--count-sub-col-->
+					<div class="count-sub-col">
+						<div class="milestone-counter">
+							<span class="stat-count highlight">50</span>
+							<div class="milestone-details">Happy Shop Owner's</div>
+						</div>
+						<!--milestone-counter-->
+					</div>
+					<!--count-sub-col-->
+					<div class="count-sub-col">
+						<div class="milestone-counter">
+							<span class="stat-count highlight">200</span>
+							<div class="milestone-details">Happy Customer</div>
+						</div>
+						<!--milestone-counter-->
+					</div>
+					<!--count-sub-col-->
+				</div>
+				<!--stat-->
+				<div class="stat-info-par">
+					<div class="stat-info-sub-par">
+						<div class="stat-info-div">
+							<p>This many shops are added to the application.</p>
+						</div><!--stat-info-div-->
+					</div><!--stat-info-sub-par-->
+					<div class="stat-info-sub-par">
+						<div class="stat-info-div">
+							<p>This many shop owner's are happy with the profit and result, which they get throught this application.</p>
+						</div><!--stat-info-div-->
+					</div><!--stat-info-sub-par-->
+					<div class="stat-info-sub-par">
+						<div class="stat-info-div">
+							<p>This many customer get satisfaction by getting the good services from the Local shop of this application.</p>
+						</div><!--stat-info-div-->
+					</div><!--stat-info-sub-par-->
+				</div><!--stat-info-par-->
+			</div>
+			<!--count-col-->
+			<div class="clear"></div>
+		</div>
+		<!--container-->
+	</section>
+
+	<Section id="contact-us">
+		<div class="container">
+			<div class="form-par">
+				<h2>GET IN TOUCH WITH US !</h2> 
+				<form>
+					<input type="text" placeholder="Your Name" class="f-name form-com"/>
+					<input type="email" placeholder="E-mail" class="em-input form-com"/>
+					<input type="tel" id="phone" name="phone" class="phone-input form-com"
+					placeholder="Mobile No." pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required/>
+					<input type="text" placeholder="Website" class="web-input form-com"/>
+					<input type="submit" value="submit" class="submit-btn"/>
+
+
+				</form>
+			</div>
+		</div><!--container-->
+	</Section><!--contact-us-->
+
+	<footer>
+		<div class="container">
+			<div class="footer-col">
+			<h3>About Us</h3>	
+			<p>We Focus on the needs of small to middle market businesses to improve and grow their return,so that you site will withstand the test of time. We care about your business, which is why we work with you.</p>
+			<div class="social-menu-footer">
+				<a href="#"><i class="fa fa-facebook-official"></i></a>
+				<a href="#"><i class="fa fa-twitter-square"></i></a>
+				<a href="#"><i class="fa fa-instagram"></i></a>
+				<a href="#"><i class="fa fa-youtube-square"></i></a>
+			</div>
+			</div><!--footer-col-->
+			<div class="footer-col footer-2-col">
+			<h3>Quick Links</h3>	
+			<ul>
+				<li><a href="{% url 'home'%}">Home</a></li>
+				<li><a href="#why-choose-us">About Us</a></li>
+				<li><a href="{% url 'secondpage'%}">Businesses</a></li>
+                <li><a href="{% url 'thirdpage'%}">Add Business</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+			</ul>
+			</div><!--footer-col-->
+			<div class="footer-col">
+			<h3>Contact Us</h3>	
+			<p><i class="fa fa-envelope-o"></i> <a href="mailto:localvocal@gmail.com">localvocal@gmail.com</a>
+			</p>
+			<p><i class="fa fa-mobile-phone"></i> <a href="tel:7652000000">7652000000</a></p>
+			<p><i class="fa fa-map-o"></i> <span>Geetha Bhawan, Indore, 452005, India</span></p>
+			</div><!--footer-col-->	
+	<script type="text/javascript" src="{% static 'jquery-3.2.1.min.js'%}"></script>
+	<Script src="{% static 'extrenaljq.js'%}" type="text/javascript"></Script>  
+{% endblock %}
+{% include 'footer.html' %}		
+
+		
+

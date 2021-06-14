@@ -1,0 +1,157 @@
+/*
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.clear {
+	clear: both;
+}
+*/
+
+.text-center{
+	text-align: center;
+}
+/*
+.container {
+	max-width: 1330px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+a {
+	font-family: 'Rubik';
+	font-weight: 400;
+}
+
+.active {
+	color: #ee4b0b !important;
+}
+
+.fixed-header {
+	position: fixed;
+	width: 100%;
+	z-index: 99;
+	left: 0;
+	top: 0;
+	background-color: #fff;
+	box-shadow: 10px 10px 20px #fff;
+}
+
+header {
+	z-index: 1;
+	position: relative;
+}
+
+.nav-col{
+	float: left;
+	width: 75%;
+}
+
+.cnt-info-col{
+	float: right;
+	text-align: right;
+	width: 25%;
+}
+
+.logo{
+	float: left;
+	width: 30%;
+}
+
+.menu{
+	float: right;
+	width: 70%;	
+}
+
+.logo img{
+	width: 180px;
+	margin-top: -30px;
+	margin-left: -10px;
+}
+
+.menu a {
+	text-decoration: none;
+	padding: 22px;
+	display: inline-block;
+	color: black;
+	transition: all 0.5s ease;
+}
+
+.menu a:hover {
+	color: #ee4b0b;
+}
+
+.cnt-info-col a {
+	color: black;
+	text-decoration: none;
+	margin-top: 23px;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 400;
+	transition: all 0.5s ease;
+}
+
+.cnt-info-col a:hover {
+    color: #ee4b0b;
+}
+*/
+.header-bg-parent{
+	background-color: rgb(241, 221, 209);
+	margin-top: 26px;
+}
+h1{
+	text-align: center;
+	padding-top: 70px;
+	text-decoration: underline;
+	text-underline-position: under;
+	border-bottom: 3px;
+	margin-top: -30px;
+}
+.cards{
+	width: 25%;
+	display: inline-block;
+	border-radius: 5px;
+	margin: 50px;
+	background-color: #fc9;
+}
+.cards:hover{
+	box-shadow: 2px 2px 10px black;
+}
+.image img{
+	width: 100%;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+.title{
+	text-align: center;
+	padding: 5px;
+}
+.des{
+	text-align: center;
+	padding: 4px;
+}
+button{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: white;
+	border: 1px solid black;
+	padding: 5px;
+	border-radius: 5px; 
+	cursor: pointer;
+}
+button:hover{
+	background-color: black;
+	color: white;
+	transition: 0.5s;
+}
+p.copyright-footer {
+	text-align: center;
+	font-family: "Rubik";
+	padding: 20px 20px;
+}
+hr.footer-hr {
+	margin: 60px 0px 20px;
+}

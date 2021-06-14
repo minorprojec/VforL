@@ -1,0 +1,98 @@
+{% include 'header.html' %}
+{% load static %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'style1.css'%}">
+{% endblock %}
+{% block con %}
+<section class="header-bg-parent">
+	<h1><u>Businesses</u></h1>
+	<div class="main">
+    <div class="cards">
+    	<div class="image">
+    		<img src="{% static 'grocery1.jpeg'%}">
+    	</div>
+    	<div class="title">
+    		<h2>Shivam Kirana & General Stores</h2>
+    	</div>
+    	<div class="des">
+    		<p>Ekta Nagar, Indore, Madhya Pradesh, 452005</p>
+    		<button><a href="{% url 'grocerypage'%}">View more...</a></button>
+    	</div>
+    </div>
+
+
+    <div class="cards">
+    	<div class="image">
+    		<img src="{% static 'salon1.jpeg' %}">
+    	</div>
+    	<div class="title">
+    		<h2>Nj Beauty Salon</h2>
+    	</div>
+    	<div class="des">
+    		<p>221, Sukhdev Nagar, Airport Road, Indore, Madhya Pradesh, 452005</p>
+    		<button>View more...</button>
+    	</div>
+    </div>
+
+
+    <div class="cards">
+    	<div class="image">
+    		<img src="{% static 'household.jpeg'%}">
+    	</div>
+    	<div class="title">
+    		<h2>Total Solution Services</h2>
+    	</div>
+    	<div class="des">
+    		<p>B-1 HR Plaza Opp. SBI Bank. Nagar Nigam, Indore, Madhya Pradesh, 452002</p>
+    		<button>View more...</button>
+    	</div>
+    </div>
+
+
+    <div class="cards">
+    	<div class="image">
+    		<img src="{% static 'clothes1.jpeg'%}">
+    	</div>
+    	<div class="title">
+    		<h2>Gurudev Garments</h2>
+    	</div>
+    	<div class="des">
+    		<p>265, Ranjeet Hanuman Rd, Usha Nagar, Indore, Madhya Pradesh 452009</p>
+    		<button><a href = "{% url 'gurudevpage'%}">View more...</a></button>
+    	</div>
+    </div>
+
+
+    <div class="cards">
+    	<div class="image">
+    		<img src=" {% static 'naturals1.jpeg'%}">
+    	</div>
+    	<div class="title">
+    		<h2>99 Naturals</h2>
+    	</div>
+    	<div class="des">
+    		<p>Shop no 5, khajrana Main road 1 Ravi Nagar, near Baikunth Dham, Indore, Madhya Pradesh 452001</p>
+    		<button><a href ="{% url 'fruitshop' %}">View more...</a></button>
+    	</div>
+    </div>
+
+
+    <div class="cards">
+    	<div class="image">
+    		<img src=" {% static 'electric1.jpeg'%}">
+    	</div>
+    	<div class="title">
+    		<h2>Gaurav Enterprises</h2>
+    	</div>
+    	<div class="des">
+    		<p>142, Annapurana Rd, near Dashahra maidan, Revenue Colony, Indore, Madhya Pradesh, 452009</p>
+    		<button><a href = "{% url 'gauravpage'%}">View more...</a></button>
+    	</div>
+    </div>
+</div>
+</section>
+<script type="text/javascript" src="{% static 'jquery-3.2.1.min.js'%}"></script>
+<Script src="{% static 'externaljq.js'%}" type="text/javascript"></Script>
+{% endblock %}
+{% include 'footer.html' %}

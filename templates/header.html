@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block title %} {% endblock %}</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	{% block content %}
+    <link type="text/css" rel="stylesheet" href="{% static 'header.css'%}" />
+    {% endblock %}  
+    <!--/*font awesome icons*/-->
+	<link type="text/css" rel="stylesheet" href="CSS/font-awesome.min.css" />
+    <!--rubik font family -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Rubik:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+	
+	<header id="home">
+		<div class="container">
+			<div class="top-bar">
+				<div class="nav-col">
+					<div class="logo">
+						<img src="{% static 'logo3.png' %}" class="img-responsive" alt="logo">
+					</div>
+					<!--logo-->
+                    <div class="menu">
+                    	<a class="active" href="{% url 'home'%}"><b>Home</b></a>
+                    	<a href="#why-choose-us"><b>About Us</b></a>
+                    	<a href="{% url 'secondpage'%}"><b>Businessess</b></a>
+                    	<a href="{% url 'thirdpage'%}"><b>Add Business</b></a>
+                    	<a href="#contact-us"><b>Contact Us</b></a>
+                    </div>
+                    <div class="clear"></div><!--clear-->
+				</div>
+				<!--nav-col-->
+				<div class="cnt-info-col">
+					<a href="tel:7652000000"><b><span>Call Us -</span> 7652000000</b></a>
+			</div>
+			<div class="clear"></div><!--clear-->	
+			</div>
+			<!--top-bar-->
+		</div>
+	</header>
+	{% block con %}
+	
+	{% endblock %}
+</body>
+</html>

@@ -1,0 +1,103 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.clear {
+	clear: both;
+}
+
+
+.container {
+	max-width: 1330px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+a {
+	font-family: 'Rubik';
+	font-weight: 400;
+}
+
+.active {
+	color: #ee4b0b !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Nunito';
+    font-weight: 800;
+}
+
+
+
+
+/*header*/
+.fixed-header {
+	position: fixed;
+	width: 100%;
+	z-index: 99;
+	left: 0;
+	top: 0;
+	background-color: #fff;
+	box-shadow: 10px 10px 20px #fff;
+}
+header {
+	z-index: 1;
+	position: relative;
+}
+
+.nav-col{
+	float: left;
+	width: 75%;
+}
+
+.cnt-info-col{
+	float: right;
+	text-align: right;
+	width: 25%;
+}
+
+.logo{
+	float: left;
+	width: 30%;
+}
+
+.menu{
+	float: right;
+	width: 70%;
+	margin-top: 30px;
+}
+
+.logo img{
+	width: 180px;
+	margin-top: -30px;
+	margin-left: -10px;
+}
+.menu a {
+	text-decoration: none;
+	padding: 22px;
+	display: inline-block;
+	color: black;
+	transition: all 0.5s ease;
+}
+.menu a:hover {
+	color: #ee4b0b;
+}
+.cnt-info-col a {
+	color: black;
+	text-decoration: none;
+	margin-top: 51px;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 400;
+	transition: all 0.5s ease;
+}
+.cnt-info-col a:hover {
+    color: #ee4b0b;
+}
